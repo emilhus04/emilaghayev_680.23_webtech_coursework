@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const step1Form = document.getElementById('step1-form');
     const step2Form = document.getElementById('step2-form');
 
-    // Логика для ПЕРВОЙ страницы
+    // Логика для первой страницы
     if (step1Form) {
         const savedData = JSON.parse(sessionStorage.getItem('studentData')) || {};
         if(savedData.fullName) document.getElementById('fullName').value = savedData.fullName;
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Логика для ВТОРОЙ страницы
+    // Логика для второй страницы
     if (step2Form) {
         step2Form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const finalData = {
                 ...existingData,
                 faculty: document.getElementById('faculty').value,
-                // Для файлов обычно используется FormData, но для примера просто сохраним имя
                 fileName: document.getElementById('diploma').files[0].name 
             };
 
