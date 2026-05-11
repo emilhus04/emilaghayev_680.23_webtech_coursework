@@ -1,4 +1,4 @@
-// Пример: маска для телефона и запрет цифр в имени
+// Маска для телефона и запрет цифр в имени
 document.querySelectorAll('input').forEach(input => {
     input.addEventListener('blur', () => {
         input.classList.add('touched');
