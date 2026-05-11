@@ -156,7 +156,7 @@ input:focus, select:focus {
     margin: 0 auto 20px;
 }
 
-/* Адаптивность */
+/* Адаптивность к ширине экрана */
 @media (max-width: 480px) {
     .container {
         padding: 20px;
