@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Отправка данных на сервер:', finalData);
             sessionStorage.setItem('studentData', JSON.stringify(finalData));
             
-            // Имитация задержки сервера
             setTimeout(() => {
                 window.location.href = 'success.html';
             }, 500);
